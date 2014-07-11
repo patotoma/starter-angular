@@ -22,11 +22,11 @@
 4. Congratulations, you have setup for angular development!
 
 #### Scripts to use:
-* server: runs a local http-server on port 8000 (`npm run server`)
-* karma: runs unit testing service and rerun tests with every code change (`npm run karma`)
-* karma-single: runs unit tests only one time (`npm run karma-single`)
-* protractor: runs end to end tests with firefox (`npm run protractor`)
-* gitlog: usefull command for pretty git commits viewing (`npm run gitlog`)
+* `npm run server` runs a local http-server on port 8000
+* `npm run karma` runs unit testing service and rerun tests with every code change
+* `npm run karma-single` runs unit tests only one time and close afterwards
+* `npm run protractor` runs end to end tests with firefox
+* `npm run gitlog` usefull command for viewing git commits in a pretty way
 
 > (All scripts works with local modules. Feel free to add your own scripts!)
 
