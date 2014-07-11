@@ -13,7 +13,7 @@
     "protractor": "*",
     "http-server": "*",
     "bower": "*",
-    "shelljs": "*",
+    "shelljs": "*"
   }, 
   "scripts": {
     "postinstall": "bower install",
