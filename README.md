@@ -11,7 +11,7 @@
 * Http-server
 * Bower
 * Basic predefined scripts for easy use
-> All the very latest versions in time you are installing it!
+###### (All the very latest versions in time you are installing it!)
 
 #### How to use:
 0. Make sure you have `nodeJS` along with `npm` installed.
@@ -26,7 +26,7 @@
 * karma-single: runs unit tests only one time (`npm run karma-single`)
 * protractor: runs end to end tests with firefox (`npm run protractor`)
 * gitlog: usefull command for pretty git commits viewing (`npm run gitlog`)
-> All scripts works with local modules. Feel free to add your own scripts!
+###### (All scripts works with local modules. Feel free to add your own scripts!)
 
 ##### Please let me know if you find any bugs or errors.
 
