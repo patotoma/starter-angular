@@ -3,7 +3,7 @@
   "author": "Patrik Toma",
   "version": "0.0.0",
   "description": "starting template",
-  "repository": "",
+  "repository": "https://github.com/patotoma/starter-angular",
   "license": "",
   "private": true,
   "devDependencies": {
