@@ -1,0 +1,7 @@
+*.log
+!.gitkeep
+node_modules
+bower_components
+tmp
+*.sublime-project
+*.sublime-workspace

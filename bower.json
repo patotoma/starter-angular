@@ -1,0 +1,17 @@
+{
+  "name": "starter",
+  "version": "0.0.0",
+  "authors": [
+    "pato <patotoma@gmail.com>"
+  ],
+  "description": "starter template",
+  "license": "",
+  "private": true,
+  "dependencies": {
+    "angular": "*",
+    "angular-route": "*",
+    "angular-mocks": "*",
+    "bootstrap": "*",
+    "less": "*"
+  }
+}

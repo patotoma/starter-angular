@@ -1,0 +1,27 @@
+{
+  "name": "starter",
+  "author": "Patrik Toma",
+  "version": "0.0.0",
+  "description": "starting template",
+  "repository": "",
+  "license": "",
+  "private": true,
+  "devDependencies": {
+    "karma": "*",
+    "karma-jasmine": "*",
+    "karma-firefox-launcher": "*",
+    "protractor": "*",
+    "http-server": "*",
+    "bower": "*",
+    "shelljs": "*",
+  }, 
+  "scripts": {
+    "postinstall": "bower install",
+    "server": "./node_modules/http-server/bin/http-server -a localhost -p 8000",
+    "karma": "./node_modules/karma/bin/karma start test/karma.conf.js",
+    "karma-single": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run",
+    "update-webdriver": "./node_modules/protractor/bin/webdriver-manager update",
+    "protractor": "npm run update-webdriver && ./node_modules/protractor/bin/protractor test/protractor-conf.js",
+    "gitlog": "git log --pretty=oneline --abbrev-commit"
+  }
+}
