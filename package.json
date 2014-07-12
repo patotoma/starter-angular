@@ -16,7 +16,7 @@
     "shelljs": "*"
   }, 
   "scripts": {
-    "postinstall": "bower install && npm run update-webdriver",
+    "postinstall": "./node_modules/bower/bin/bower install && npm run update-webdriver",
     "server": "./node_modules/http-server/bin/http-server -a localhost -p 8000",
     "karma": "./node_modules/karma/bin/karma start test/karma.conf.js",
     "karma-single": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run",
