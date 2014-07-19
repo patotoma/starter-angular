@@ -13,8 +13,9 @@
     "protractor": "*",
     "http-server": "*",
     "bower": "*",
-    "shelljs": "*"
-  }, 
+    "shelljs": "*",
+    "grunt": "*"
+  },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install & npm run update-webdriver && npm run server",
     "server": "./node_modules/http-server/bin/http-server -a localhost -p 8000 -o",
