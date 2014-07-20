@@ -14,7 +14,8 @@
     "http-server": "*",
     "bower": "*",
     "shelljs": "*",
-    "grunt": "*"
+    "grunt": "*",
+    "grunt-contrib-uglify": "*"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install & npm run update-webdriver && npm run server",
