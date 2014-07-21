@@ -11,17 +11,31 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
-      },
       build: {
         src: 'app/js/**/*.js',
         dest: 'dist/js/app.min.js'
       }
+      // separately: {
+      //   expand: true,
+      //   cwd: 'app/js/',
+      //   src: '**/*.js',
+      //   dest: 'dist/js/',
+      //   ext: '.min.js'
+      // }
     },
 
     cssmin: {
-      // options here
+      build: {
+        src: 'app/css/**/*.css',
+        dest: 'dist/css/style.min.css'
+      }
+      // separately: {
+      //   expand: true,
+      //   cwd: 'app/css/',
+      //   src: '**/*.css',
+      //   dest: 'dist/css/',
+      //   ext: '.min.css'
+      // }
     },
 
     less: {
@@ -42,9 +56,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', []);
   // Custom tasks
-  grunt.registerTask('uglifni', ['uglify']);
-  grunt.registerTask('cssminni', ['cssmin']);
-  grunt.registerTask('lessni', ['less']);
-  grunt.registerTask('autoprefixni', ['autoprefixer']);
+  grunt.registerTask('minni', ['uglify', 'cssmin']);
 
 }
