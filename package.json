@@ -13,9 +13,7 @@
     "protractor": "*",
     "http-server": "*",
     "bower": "*",
-    "shelljs": "*",
-    "grunt": "*",
-    "grunt-contrib-uglify": "*"
+    "shelljs": "*"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install & npm run update-webdriver && npm run server",
@@ -23,7 +21,6 @@
     "karma": "./node_modules/karma/bin/karma start test/karma.conf.js",
     "karma-single": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run",
     "update-webdriver": "./node_modules/protractor/bin/webdriver-manager update",
-    "protractor": "./node_modules/protractor/bin/protractor test/protractor-conf.js",
-    "gitlog": "git log --pretty=oneline --abbrev-commit"
+    "protractor": "./node_modules/protractor/bin/protractor test/protractor-conf.js"
   }
 }
