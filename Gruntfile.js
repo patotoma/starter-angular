@@ -26,24 +26,37 @@ module.exports = function (grunt) {
 
     cssmin: {
       build: {
-        src: 'app/css/**/*.css',
+        src: 'tmp/*.css',
         dest: 'dist/css/style.min.css'
       }
-      // separately: {
-      //   expand: true,
-      //   cwd: 'app/css/',
-      //   src: '**/*.css',
-      //   dest: 'dist/css/',
-      //   ext: '.min.css'
-      // }
     },
 
-    less: {
-      // options here
+    less: { // need testing
+      build: {
+        expand: true,
+        flatten: true,
+        src: 'app/css/**/*.less',
+        dest: 'tmp/',
+        ext: '.css'
+      }
     },
 
     autoprefixer: {
-      // options here
+      build: {
+        expand: true,
+        flatten: true,
+        src: 'app/css/**/*.css',
+        dest: 'tmp/'
+      }
+    },
+
+    clean: {
+      tmp: {
+        src: 'tmp'
+      },
+      dist: {
+        src: 'dist'
+      }
     }
 
   });
@@ -53,9 +66,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.registerTask('default', []);
   // Custom tasks
-  grunt.registerTask('minni', ['uglify', 'cssmin']);
+  grunt.registerTask('dist', ['clean', 'uglify', 'less', 'autoprefixer', 'cssmin', 'clean:tmp']);
 
 }
