@@ -12,21 +12,39 @@ module.exports = function (grunt) {
 
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       },
       build: {
-        src: 'app/js/app.js',
+        src: 'app/js/**/*.js',
         dest: 'dist/js/app.min.js'
       }
+    },
+
+    cssmin: {
+      // options here
+    },
+
+    less: {
+      // options here
+    },
+
+    autoprefixer: {
+      // options here
     }
 
   });
 
   // Loading Grunt plugins and tasks
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-autoprefixer');
 
   grunt.registerTask('default', []);
   // Custom tasks
   grunt.registerTask('uglifni', ['uglify']);
+  grunt.registerTask('cssminni', ['cssmin']);
+  grunt.registerTask('lessni', ['less']);
+  grunt.registerTask('autoprefixni', ['autoprefixer']);
 
 }
