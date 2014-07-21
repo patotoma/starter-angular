@@ -15,7 +15,10 @@
     "bower": "*",
     "shelljs": "*",
     "grunt": "*",
-    "grunt-contrib-uglify": "*"
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-autoprefixer": "*"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install & npm run update-webdriver && npm run server",
