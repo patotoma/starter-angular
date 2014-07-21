@@ -26,6 +26,7 @@
 * `npm run karma` runs unit testing service and rerun tests with every code change
 * `npm run karma-single` runs unit tests only one time and close afterwards
 * `npm run protractor` runs end to end tests with firefox
+* `npm run gitlog` usefull command for viewing git commits in a pretty way
 
 > (All scripts works with local modules. Feel free to add your own scripts!)
 
