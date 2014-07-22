@@ -1,10 +1,10 @@
 {
   "name": "starter",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "authors": [
     "pato <patotoma@gmail.com>"
   ],
-  "description": "starter template",
+  "description": "starting template for angular development",
   "license": "",
   "private": true,
   "dependencies": {

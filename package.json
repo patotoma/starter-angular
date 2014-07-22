@@ -1,8 +1,8 @@
 {
   "name": "starter",
   "author": "Patrik Toma",
-  "version": "1.0.0",
-  "description": "starting template",
+  "version": "1.0.1",
+  "description": "starting template for angular development",
   "repository": "https://github.com/patotoma/starter-angular",
   "license": "",
   "private": true,
