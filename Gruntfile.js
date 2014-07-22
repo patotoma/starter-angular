@@ -15,6 +15,7 @@ module.exports = function (grunt) {
         src: 'app/js/**/*.js',
         dest: 'dist/js/app.min.js'
       }
+      // create separate files
       // separately: {
       //   expand: true,
       //   cwd: 'app/js/',
@@ -31,7 +32,7 @@ module.exports = function (grunt) {
       }
     },
 
-    less: { // need testing
+    less: {
       build: {
         expand: true,
         flatten: true,
