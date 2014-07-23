@@ -1,9 +1,8 @@
 exports.config = {
+  
   allScriptsTimeout: 11000,
 
-  specs: [
-    'e2e/*.js'
-  ],
+  specs: ['e2e/*.js'],
 
   capabilities: {
     'browserName': 'firefox'
@@ -16,4 +15,5 @@ exports.config = {
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
   }
+  
 };
