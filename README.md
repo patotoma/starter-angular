@@ -1,4 +1,4 @@
-## Lightweight starter kit for angular development v1.0.2
+## Lightweight starter kit for angular development v1.1.0
 
 ### Easy setup for developing and testing angular applications.
 
@@ -27,7 +27,7 @@
 * `npm run karma` runs unit testing service and rerun tests with every code change
 * `npm run karma-single` runs unit tests only one time and close afterwards
 * `npm run protractor` runs end to end tests with firefox
-* `grunt dist` fires some grunt tasks and create a `/dist/` directory with compiled and minified css and js 
+* `grunt dist` fires some grunt tasks and create a `/dist/` directory which is production ready
 
 > (All scripts works with local modules. Feel free to add your own scripts!)
 
