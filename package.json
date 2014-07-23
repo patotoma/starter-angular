@@ -1,7 +1,7 @@
 {
   "name": "starter",
   "author": "Patrik Toma",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "starting template for angular development",
   "repository": "https://github.com/patotoma/starter-angular",
   "license": "",
@@ -19,7 +19,8 @@
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-less": "*",
     "grunt-autoprefixer": "*",
-    "grunt-contrib-clean": "*"
+    "grunt-contrib-clean": "*",
+    "grunt-exec": "*"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install & npm run update-webdriver && npm run server",

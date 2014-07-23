@@ -58,6 +58,11 @@ module.exports = function (grunt) {
       dist: {
         src: 'dist'
       }
+    },
+
+    exec: {
+      copyIndex: 'cp app/*.html dist/',
+      copyViews: 'cp -r app/views dist/'
     }
 
   });
@@ -68,9 +73,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('default', []);
   // Custom tasks
-  grunt.registerTask('dist', ['clean', 'uglify', 'less', 'autoprefixer', 'cssmin', 'clean:tmp']);
+  grunt.registerTask('dist', ['clean', 'uglify', 'less', 'autoprefixer', 'cssmin', 'exec', 'clean:tmp']);
 
 }
