@@ -1,4 +1,4 @@
-## Lightweight starter kit for angular development v1.0.1
+## Lightweight starter kit for angular development v1.0.2
 
 ### Easy setup for developing and testing angular applications.
 
