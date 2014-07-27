@@ -27,7 +27,7 @@
 * `npm run karma` runs unit testing service and rerun tests with every code change
 * `npm run karma-single` runs unit tests only one time and close afterwards
 * `npm run protractor` runs end to end tests with firefox
-* `grunt dist` fires some grunt tasks and create a `/dist/` directory which is production ready
+* `grunt dist` fires some grunt tasks and create a `/dist/` directory almost ready for production use
 
 > (All scripts works with local modules. Feel free to add your own scripts!)
 
