@@ -8,9 +8,9 @@
   "license": "",
   "private": true,
   "dependencies": {
-    "angular": "~1.2.22",
-    "angular-route": "~1.2.22",
-    "angular-mocks": "~1.2.22",
+    "angular": "~1.2.21",
+    "angular-mocks": "~1.2.21",
+    "angular-route": "~1.2.21",
     "bootstrap": "~3.2.0",
     "less": "~1.7.4"
   }
