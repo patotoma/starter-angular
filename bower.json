@@ -1,5 +1,5 @@
 {
-  "name": "starter",
+  "name": "starter-angular",
   "version": "1.2.0",
   "authors": [
     "pato <patotoma@gmail.com>"
@@ -8,10 +8,10 @@
   "license": "",
   "private": true,
   "dependencies": {
-    "angular": "~1.2.21",
-    "angular-mocks": "~1.2.21",
-    "angular-route": "~1.2.21",
-    "bootstrap": "~3.2.0",
-    "less": "~1.7.4"
+    "angular": "*",
+    "angular-mocks": "*",
+    "angular-route": "*",
+    "bootstrap": "*",
+    "less": "*"
   }
 }

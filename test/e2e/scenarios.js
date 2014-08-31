@@ -18,6 +18,6 @@ describe('starter app', function() {
       expect(elem.getText()).toEqual('Wellcome home!');
     });
 
-  })
+  });
 
 });

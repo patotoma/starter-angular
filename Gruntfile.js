@@ -79,4 +79,4 @@ module.exports = function (grunt) {
   // Custom tasks
   grunt.registerTask('dist', ['clean', 'uglify', 'less', 'autoprefixer', 'cssmin', 'exec', 'clean:tmp']);
 
-}
+};
