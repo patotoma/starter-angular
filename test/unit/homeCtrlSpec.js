@@ -1,6 +1,6 @@
 'use strict';
 
-describe('homeController', function() {
+describe('homeCtrl', function() {
 
   var $scope;
 
@@ -8,7 +8,7 @@ describe('homeController', function() {
 
   beforeEach(inject(function($rootScope, $controller) {
     $scope = $rootScope.$new();
-    $controller('homeController', {
+    $controller('homeCtrl', {
       $scope: $scope
     });
   }));
